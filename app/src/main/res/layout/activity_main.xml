@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_maptest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_serach"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- ##e0ffffff半透明背景色颜色   android:alpha="0.5"透明方法 -->
+
+        <EditText
+            android:id="@+id/et_serach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:hint="城市搜索格式:北京_加油站\n(长按可搜索路线)"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:text="搜索/路线" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llweixing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5">
+
+        <Button
+            android:id="@+id/bt_putong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通地图" />
+
+        <Button
+            android:id="@+id/bt_weixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卫星地图" />
+
+        <Button
+            android:id="@+id/bt_jiaotong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交通地图" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_shangyiye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:alpha="0.5"
+        android:text="上一页" />
+
+    <Button
+        android:id="@+id/bt_xiayiye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:alpha="0.5"
+        android:text="下一页" />
+
+    <LinearLayout
+        android:id="@+id/ll_suofang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:src="@drawable/da" />
+
+        <ImageButton
+            android:id="@+id/ib_xiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:alpha="0.5"
+            android:src="@drawable/xiao" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_xiayiye"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="60dp"
+        android:alpha="0.5"
+        android:src="@drawable/dingwei" />
+
+</RelativeLayout>

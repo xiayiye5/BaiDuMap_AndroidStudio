@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_nearserach"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:orientation="horizontal" >
+
+    <!-- ##e0ffffff半透明背景色颜色   android:alpha="0.5"透明方法 -->
+
+    <EditText
+        android:id="@+id/et_nearserach"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="请输入上面地址附近所要查找的位置" />
+
+    <Button
+        android:id="@+id/bt_nearsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击搜索" />
+
+</LinearLayout>

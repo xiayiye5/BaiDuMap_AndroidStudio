@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_jiache"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#C1FFC1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="路线查找" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#33000000" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_transtrate_road1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="驾车"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_transtrate_road2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="换乘"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#33000000" />
+
+    <RadioGroup
+        android:id="@+id/rg_jiache_huancheng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb_nosubway"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="无地铁"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:background="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_time_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="时间快"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:background="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_little_transtrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="少换乘"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:background="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_little_walking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="少步行"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_search_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:hint="请输入开始位置"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#33000000" />
+
+    <EditText
+        android:id="@+id/et_search_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:hint="中途经过位置格式:北京_西直门"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#33000000" />
+
+    <EditText
+        android:id="@+id/et_search_end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:hint="请输入终点位置"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#33000000" />
+
+    <Button
+        android:id="@+id/et_search_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:hint="点击查找" />
+
+</LinearLayout>
