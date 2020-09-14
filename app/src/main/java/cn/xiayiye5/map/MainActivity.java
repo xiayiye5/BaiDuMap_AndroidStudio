@@ -91,10 +91,16 @@ import cn.xiayiye5.map.utils.DrivingRouteOverlay;
 import cn.xiayiye5.map.utils.PoiOverlay;
 import cn.xiayiye5.map.utils.TransitRouteOverlay;
 
+/**
+ * @author xiayiye5
+ * 2020年9月14日10:39:18
+ * 百度地图页面
+ */
 public class MainActivity extends FragmentActivity implements OnMarkerClickListener, OnClickListener, OnLongClickListener {
 
     double weidu = 39.9184470000;
-    double jindu = 116.3252280000;// 这个是百度地图公司的经纬度坐标点
+    // 这个是百度地图公司的经纬度坐标点
+    double jindu = 116.3252280000;
     LatLng point = new LatLng(weidu, jindu);
     private IntentFilter filter;
     private MapView mv_maptest;
